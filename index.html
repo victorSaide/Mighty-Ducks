@@ -5,50 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- estilos de index.html -->
+    <!-- estilos de diseño N°1 -->
     <link rel="stylesheet" href="./assets/styles/design1.css">
-    <!-- estilos de aboutMDHL.html -->
-    <link rel="stylesheet" href="./assets/styles/design2.css">
-    <!-- estilos de contact.html -->
-    <link rel="stylesheet" href="./assets/styles/design3.css">
-
+    <!-- Estilo ocultos-->
+    <!-- estilos de diseño N°2 -->
+    <!--<link rel="stylesheet" href="./assets/styles/design2.css">-->
+    <!-- estilos de diseño N°3 -->
+    <!--<link rel="stylesheet" href="./assets/styles/design3.css">-->
     <title>Mighty Ducks Hockey League</title>
 </head>
 
 <body>
     <header>
-
-        <figure>
-            <img src="./assets/images/logo-mighty-ducks-01.png" alt="logo" width="200">
-        </figure>
-
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./templates/aboutMDHL.html">About MDHL</a></li>
-                <li><a href="./templates/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <h1>Mighty Ducks Hockey League</h1>
+        <section class="banner"> <!-- borrar banner class y usar figure para height-->
+            <figure>
+                <img src="./assets/images/design1_image1.jpg" alt="banner"> <!--se puede usar background.img: url()-->
+            </figure> 
+        </section>
+        <h1>Mighty Ducks Hockey League</h1>        
+        <section class="subtitle"> <!--sino sirve borrar esta section, dejar h2-->
+            <h2>Upcoming Events</h2>
+            <section class="logo"> <!-- puede tener class -->
+                <figure>
+                    <img src="./assets/images/logo-mighty-ducks-01.png" alt="logo">
+                </figure>
+            </section>    
+        </section>
+        
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="./templates/aboutMDHL.html">About MDHL</a></li>
+            <li><a href="./templates/contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
         <article>
-            <figure>
-                <img src="./assets/images/hockey1.jpg" alt="hockey1" width="200">
-            </figure>
-
-            <h2>Upcoming Events</h2>
-
             <h3>August 4</h3>
             <p>MDSL Fundraiser</p>
             <h3>August 16</h3>
             <p>Season Kick-off: Meet the Teams</p>
             <h3>September 1</h3>
             <p>First Game of the Season (Check Game Schedule for details)</p>
-
         </article>
+
+        <aside>
+            <figure>
+                <img src="./assets/images/hockey1.jpg" alt="hockey1">
+            </figure>  
+        </aside>
     </main>
 
 </body>
