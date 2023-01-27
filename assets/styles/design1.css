@@ -9,6 +9,9 @@
     height: 300px;
     width: 100%;
     position: relative;
+    background-image: url(../images/design1_image1.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .banner img {
@@ -49,35 +52,35 @@ nav ul {
     list-style: none;
 }
 
-nav ul li a {
-    color: blue;
-    padding: 0;
-}
-
 nav ul li {
     padding: 5px 25px 25px 5px;
     box-sizing: border-box;
 }
 
-nav a:hover {
-    text-decoration: none;
-    color: black;
+nav ul li a {
+    color: blue;
+    padding: 0;
 }
 
 .container-nav-main {
-    display: flex;
     margin: 4vh;
+    position: relative;
 }
 
 nav {
     width: 15%;
     padding: 2vh;
     align-self: center;
+    position: absolute;
+    display: inline-block;
 }
 
 main {
     width: 45%;
     padding: 2vh;
+    position: absolute;
+    display: inline-block;
+    left: 20%;
 }
 
 main article p{
@@ -85,10 +88,13 @@ main article p{
 }
 
 .img-hockey {
+    position: absolute;
+    display: inline-block;
     text-align: center;
     width: 40%;
     padding: 2vh;
     align-self: center;
+    left: 60%;
 }
 
 .img-hockey img {
@@ -101,4 +107,9 @@ p{
 
 h3{
     font-style: italic;
+}
+
+.a-home /**a-about a-contact**/{
+    color: black;
+    text-decoration:none;
 }
