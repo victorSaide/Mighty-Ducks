@@ -17,7 +17,6 @@
 .banner img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
 }
 
 h1 {
@@ -76,7 +75,7 @@ nav {
 }
 
 main {
-    width: 45%;
+    width: 55%;
     padding: 2vh;
     position: absolute;
     display: inline-block;
@@ -91,9 +90,8 @@ main article p{
     position: absolute;
     display: inline-block;
     text-align: center;
-    width: 40%;
+    width: 50%;
     padding: 2vh;
-    align-self: center;
     left: 60%;
 }
 
@@ -109,7 +107,7 @@ h3{
     font-style: italic;
 }
 
-.a-home /**a-about a-contact**/{
+.a-home, .a-about, .a-contact{
     color: black;
     text-decoration:none;
 }
