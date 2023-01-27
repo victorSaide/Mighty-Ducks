@@ -1,10 +1,8 @@
 *{
     margin:0;
     padding:0;
-}
-
-img{
-    width: 200px;
+    box-sizing: 0;
+    font-family: 'Comic Neue', cursive;
 }
 
 .banner {
@@ -23,15 +21,16 @@ h1{
     top:0;
 }
 
-h2{
-    color:white;
-    background:black;
-    text-align: center;
-    height: 50px;  
-}
-
 .subtitle{
     position: relative;
+    background:black;
+}
+
+h2{
+    color:white;
+    height: 50px;
+    text-align: center;
+    padding-top: 2.5vh;
 }
 
 .logo{
@@ -53,7 +52,38 @@ nav ul li a{
     color:blue;
 }
 
-nav a:active{
+nav ul li{
+    padding: 15px;
+}
+
+nav a:hover{
     text-decoration: none;
     color: black; 
+}
+
+.container-nav-main{
+    display:flex;
+    margin: 4vh;
+}
+
+nav {
+    width: 15%;
+    padding:2vh;
+    align-self: center;
+}
+
+
+main {
+    width: 35%;
+    padding:2vh;
+}
+
+.img-hockey{
+    text-align:center;
+    width: 50%;
+    padding:2vh;
+}
+
+.img-hockey img{
+    max-height: 150px;
 }
