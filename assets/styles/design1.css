@@ -21,12 +21,16 @@
 
 h1 {
     position: absolute;
-    top: 0;
+    top: 1px;
+    left: 5px;
+    font-size:75px;
+
 }
 
 .subtitle {
     position: relative;
     background: black;
+    margin-top: 5px;
 }
 
 h2 {
@@ -101,6 +105,8 @@ main article p{
 
 p{
     text-indent: 12px;
+    padding-bottom: 20px;
+
 }
 
 h3{
