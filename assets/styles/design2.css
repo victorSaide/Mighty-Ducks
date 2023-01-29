@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: content-box;
     font-family: 'Comic Neue', cursive;
 }
 
@@ -22,7 +22,7 @@
 
 h1 {
     position: absolute;
-    top: 3px;
+    top: -80px;
     font-style: italic;
     font-size:75px;
 }
@@ -57,8 +57,9 @@ h2 {
 
 nav {
     padding: 2vh;
-    translate: 970px -345px;
+    transform: translateY(-345px);
     position: absolute;
+    left:920px;
 }
 
 nav ul {
