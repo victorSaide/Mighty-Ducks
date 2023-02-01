@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing:content-box;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Prompt', sans-serif;
     
 }
+
+/* correcciones: anchors: sacar ul li, 
+directamente a htmls todos juntos ... sueltos
+*/
 
 .banner {
     height: 300px;
@@ -30,7 +34,7 @@ h1 {
     padding: 6px;
     padding-bottom: 18px;
     border-top: solid rgb(5, 5, 5) 4px;
-    border-bottom: solid red 1px;
+    
     color: #fbe42c;
     position: fixed;
     text-indent: 25px;
@@ -63,7 +67,7 @@ h2 {
     position: absolute;
     left: 40px;
     top:65px;
-    z-index: 2;
+    
     /* logo sobre parte baja de banner transform: translateY(-210px); */
 }
 
@@ -160,3 +164,9 @@ p{
     text-align: justify;
     letter-spacing: 1.5px;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-spacing: 10px;
+    padding: 5px;
+  }
