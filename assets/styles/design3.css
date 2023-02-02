@@ -1,14 +1,50 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:content-box;
+    box-sizing: content-box;
     font-family: 'Prompt', sans-serif;
-    
 }
 
 /* correcciones: anchors: sacar ul li, 
 directamente a htmls todos juntos ... sueltos
+reducir uso de position x flexbox
 */
+
+/*header*/
+.logo {
+    position: absolute;
+    left: 40px;
+    top: 65px;
+
+    /* logo sobre parte baja de banner transform: translateY(-210px); */
+}
+
+.logo img {
+    height: 150px;
+    width: 150px;
+}
+
+nav {
+    padding: 12px;
+    transform: translateY(-385px);
+    /* translate: 970px -345px; */
+    position: absolute;
+    position: fixed;
+    z-index: 2;
+    left: 920px;
+}
+
+nav a {
+    color: #fbe42c;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: #ffff;
+    border-bottom: solid #ffff 2px;
+    padding: 5px;
+}
 
 .banner {
     height: 300px;
@@ -29,23 +65,24 @@ directamente a htmls todos juntos ... sueltos
 h1 {
     position: absolute;
     top: 0px;
-    font-size:50px;
+    font-size: 50px;
     background: black;
     padding: 6px;
     padding-bottom: 18px;
     border-top: solid rgb(5, 5, 5) 4px;
-    
+
     color: #fbe42c;
     position: fixed;
     text-indent: 25px;
     text-transform: uppercase;
 }
 
-.h1{
+.h1 {
     z-index: 1;
     width: 100%;
 }
 
+/*subtitle*/
 .subtitle {
     position: relative;
     top: 29px;
@@ -60,45 +97,10 @@ h2 {
     text-align: center;
     padding-top: 16px;
     color: white;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
-.logo {
-    position: absolute;
-    left: 40px;
-    top:65px;
-    
-    /* logo sobre parte baja de banner transform: translateY(-210px); */
-}
-
-.logo img {
-    height: 150px;
-    width: 150px;
-}
-
-nav {
-    padding: 12px;
-    transform: translateY(-385px);
-    /* translate: 970px -345px; */
-    position: absolute;
-    position: fixed;
-    z-index: 2;
-    left:920px;
-}
-
-nav a{
-    color:#fbe42c;
-    text-decoration: none;
-    padding: 5px;
-}
-
-
-nav a:hover{
-    color:#ffff;
-    border-bottom: solid #ffff 2px ;
-    padding: 5px;
-}
-
+/*main*/
 .container-nav-main {
     margin: 30px;
     margin-top: 50px;
@@ -107,7 +109,7 @@ nav a:hover{
 
 main {
     width: 55%;
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     position: absolute;
     left: 20%;
     border-left: solid gray 1px;
@@ -116,8 +118,9 @@ main {
     /* background-image: url(../images/hockey3.jpg); */
 }
 
-main article p{
+main article p {
     margin-bottom: 12px;
+    
 }
 
 .img-hockey {
@@ -134,14 +137,50 @@ main article p{
     height: 105px;
 }
 
-p{
-    padding-bottom: 20px;
+p {
+    padding-bottom: 10px;
+    padding-top: 10px;
     text-align: justify;
     letter-spacing: 1.5px;
 }
 
-table, th, td {
+/*game-info tabla*/
+table,
+th,
+td {
     border: 1px solid black;
     border-spacing: 10px;
     padding: 5px;
-  }
+}
+
+/*rules - listas*/
+
+ul{
+    text-align: justify;
+    padding: 0px 0px 10px 30px;
+}
+ul.sportmanship-all-play {
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.field-regulations {
+    list-style: decimal;
+}
+
+ul.fields-young {
+    list-style:lower-alpha;
+}
+
+li.all-play {
+    list-style: circle;
+    padding-left: 0px;
+}
+
+li{
+    padding: 10px 0px 10px 0px;
+}
+
+.bold-text{
+    font-weight: bold;
+}
