@@ -4,44 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> <!-- estilos de diseño N°1 -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <!-- estilos de diseño N°1 -->
+    <!-- <link rel="stylesheet" href="./assets/styles/design1.css"> -->
+    <!-- estilos de diseño N°2 -->
+    <!-- <link rel="stylesheet" href="./assets/styles/design2.css"> -->
+    <!-- estilos de diseño N°3 -->
+    <link rel="stylesheet" href="./assets/styles/design3.css">
     <title>Mighty Ducks Hockey League</title>
 </head>
 <body>
     <header>
-
-        <figure>
-            <img src="./assets/images/logo-mighty-ducks-01.png" alt="logo" width="200">
-        </figure>
-        
+        <div class="banner">
+            <h1 class="h1">Mighty Ducks Hockey League</h1>
+        </div>
+        <div class="subtitle">
+            <h2>Upcoming Events</h2>
+            <figure class="logo">
+                <img src="./assets/images/logo-mighty-ducks-01.png" alt="logo">
+            </figure>
+        </div>
+    </header>
+    <div class="container-nav-main">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./templates/aboutMDHL.html">About MDHL</a></li>
+                <li><a href="#" class="a-home">Home</a></li>
+                <li><a href="./templates/aboutMDHL.html">About <span>MDHL</span></a></li>
                 <li><a href="./templates/contact.html">Contact</a></li>
             </ul>
         </nav>
-            
-        <h1>Mighty Ducks Hockey League</h1>
-    </header>
-
+        <figure class="img-hockey">
+            <img src="./assets/images/hockey1.jpg" alt="hockey1">
+        </figure>
+    </div>
     <main>
         <article>
-            <figure>
-                <img src="./assets/images/hockey1.jpg" alt="hockey1" width="200">
-                <figcaption>Fotos reales de Hockey</figcaption>
-            </figure>
-
-            <h2>Upcoming Events</h2>
-
             <h3>August 4</h3>
             <p>MDSL Fundraiser</p>
             <h3>August 16</h3>
             <p>Season Kick-off: Meet the Teams</p>
             <h3>September 1</h3>
             <p>First Game of the Season (Check Game Schedule for details)</p>
-            
         </article>
     </main>
-    
 </body>
 </html>
