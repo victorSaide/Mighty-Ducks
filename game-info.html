@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,33 +17,28 @@
 </head>
 <body>
     <header>
-        <section class="banner">
-            <h1 class="h1">Mighty Ducks Hockey League</h1>
-        </section>
-        <section class="subtitle">
-            <h2>Game Information</h2>
-            <figure class="logo">
-                <img src="../assets/images/logo-mighty-ducks-01.png" alt="logo">
-            </figure>
-        </section>
-    </header>
-    <div class="container-nav-main">
+        <figure class="logo">
+            <a href="./index.html"><img src="./assets/images/logo-mighty-ducks-01.png" alt="logo"></a>
+        </figure>
         <nav>
             <a href="./index.html">Home</a>
-            <a href="./aboutMDHL.html">About <span>MDHL</span></a>
+            <a href="./about.html">About</a>
             <a href="./contact.html">Contact</a>
             <a href="./rules.html">Rules</a>
             <a href="#">Game Information</a>
-        </nav>
-        <figure class="img-hockey">
-            <img src="./assets/images/hockey1.jpg" alt="hockey1">
-        </figure>
+        </nav>    
+    </header>
+    <div class="banner">
+        <h1 class="h1">Mighty Ducks Hockey League</h1>
     </div>
-    <main>
-        <article>
+    <div class="subtitle">
+        <h2>Game Information</h2>
+    </div>
+    <main id="table">
+        <div class="cont-radius">
+            <p class="italic">Fall Schedule</p>
+            <p class="italic underline">*All games take place on Saturday</p>
             <table>
-                <caption>Fall Schedule</caption>
-                <caption>*All games take place on Saturday</caption>
                 <!-- row 0 || table headers -->
                 <tr>
                     <th>SEPTEMBER</th>
@@ -109,16 +106,13 @@
                     <td>9:30 p.m.</td>
                 </tr>
             </table>
-
-            <p>Facility Type: outdoor</p>
-            <p>Aditional Information: If deemed necessary by HDML games may be shortened or cancelled due to extreme
+            <p><span class="bold-text">Facility Type: </span> outdoor</p>
+            <p><span class="bold-text">Aditional Information: </span> If deemed necessary by HDML games may be shortened or cancelled due to extreme
                 wheather conditions.</p>
-            <p>Please direct all questions to: Michael Randall, League Coordinator</p>
-            <p>Phone: (630) 690-8132</p>
-
-        </article>
+            <p><span class="bold-text">Please direct all questions to: </span> Michael Randall, League Coordinator</p>
+            <p><span class="bold-text">Phone: </span> <a href="tel:+1+630+690-8132">(630) 690-8132</a></p>
+            <p><span class="bold-text">Email: </span><a href="michael.randall@mdhockey.org">michael.randall@mdhockey.org</a></p>
+            </div>
     </main>
-
 </body>
-
 </html>
