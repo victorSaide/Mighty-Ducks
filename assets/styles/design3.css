@@ -100,6 +100,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
+    /* usar con media query flex-wrap: wrap; */
 }
 
 main article p {
@@ -116,6 +117,8 @@ article{
 .cont-radius{
     border-radius: 15px;
     box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    background-color: #eeeee9;
+    padding:20px;
 }
 
 .img-hockey {
@@ -125,6 +128,7 @@ article{
     align-items: center;
     border-radius: 0 15px 15px 0;
     box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    /* usar con media query display none si no queda bien; */
 }
 
 .img-home{
