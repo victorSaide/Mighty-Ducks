@@ -5,11 +5,6 @@
     font-family: 'Prompt', sans-serif;
 }
 
-/* correcciones: anchors: sacar ul li, 
-directamente a htmls todos juntos ... sueltos
-reducir uso de position x flexbox
-*/
-
 /*header*/
 header{
     background-color: black;
@@ -22,13 +17,11 @@ header{
 
 .logo{
     margin-bottom: -30px;
-    
 }
 
 .logo img {
     height: 110px;
     z-index: 99;
-    
 }
 
 nav a {
@@ -69,7 +62,7 @@ nav a:hover {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
 }
 
 h1 {
@@ -100,7 +93,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
-    /* usar con media query flex-wrap: wrap; */
+    /* you may aply media queries and flex-wrap: wrap; */
 }
 
 main article p {
@@ -128,7 +121,7 @@ article{
     align-items: center;
     border-radius: 0 15px 15px 0;
     box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
-    /* usar con media query display none si no queda bien; */
+    /* if it doesn´t work apply media queries and display none */
 }
 
 .img-home{
@@ -153,7 +146,7 @@ p {
     letter-spacing: 1.5px;
 }
 
-/*game-info tabla*/
+/*game-info table*/
 table{
     display: flex;
     flex-direction: column;
@@ -175,7 +168,7 @@ table, th,td {
     text-decoration: underline;
 }
 
-/*rules - listas*/
+/*rules - lists*/
 ul{
     text-align: justify;
     padding: 0px 0px 10px 30px;
@@ -204,4 +197,98 @@ li{
 
 .bold-text{
     font-weight: bold;
+}
+
+/*registration form*/
+form{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+input{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.two-rows-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.two-rows-div fieldset{
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width:50%;   
+}
+
+.two-rows-div-dir-col fieldset {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+}
+
+.personal-information{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#lastname, #firstname{
+    width: 300px;
+}
+
+.button{
+    padding: 5px;
+    width: 50px;
+    background-color: #5ca49c;
+    border-radius: 10px;
+    color: #ffff;
+    font-weight: bold;
+    width: 200px;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    padding: 5px;
+    width: 50px;
+    background-color: #fbe42c;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    width: 200px;
+    font-size: larger;
+    text-transform: uppercase;    
+}   
+
+label{
+    padding: 3px;
+}
+
+/*show data styles*/
+.main-shd{
+    background-color: #eeeee9;
+    padding: 50px;
+}
+
+.sh-data-tb :nth-child(1) {
+    border:solid gray 1px;
+}
+
+.sh-data-tb :nth-child(2) {
+    border:solid gray 1px;
 }
